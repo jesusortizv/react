@@ -1,11 +1,13 @@
-$spacer: 1rem;
-
 html {
 }
 
 body {
   background-color: #304FFE;
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 22px;
 }
 
 input {
@@ -20,7 +22,9 @@ h2 {
   font-size: 1.8rem;
   line-height: 2.14rem;
   margin: 0 0 $spacer 0;
+  @include media("<tablet") {
 
+  }
 }
 p {
   font-family: 'Source Sans Pro', sans-serif;

@@ -26,7 +26,7 @@ const Partners = (props) => {
   return (
     <section className="partners">
       <div>
-        <span>Our partners:</span>
+        <h2>Our partners:</h2>
       </div>
       <div>
         {partnerLogos}

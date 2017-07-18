@@ -1,4 +1,7 @@
 .layout .logo {
   text-align: center;
   margin-bottom: 20px;
+  @include media("<tablet") {
+    display: none;
+  }
 }
