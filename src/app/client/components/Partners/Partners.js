@@ -18,15 +18,15 @@ const partners = [{
   }
 ];
 
-const partnerLogos = partners.map((partner) =>
-    <div><img className="Nopa" alt={partner.name} src={partner.logo} /></div>
+const partnerLogos = partners.map((partner, index) =>
+    <div key={index}><img className="Nopa" alt={partner.name} src={partner.logo} /></div>
 );
 
 const Partners = (props) => {
   return (
     <section className="partners">
       <div>
-        <h2>Our partners:</h2>
+        <span>Our partners:</span>
       </div>
       <div>
         {partnerLogos}

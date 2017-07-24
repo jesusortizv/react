@@ -1,6 +1,8 @@
 import React from 'react';
 import { Layout, Button } from '../../components';
 import * as Paths from '../../constants/paths';
+import { selectBank } from '../../redux/actions/actionTypes.js';
+import { connect } from 'react-redux';
 
 const bankList = [{
   name: 'Barclays',
@@ -28,25 +30,30 @@ const bankList = [{
   }
 ];
 
-const ChooseBankPage = (props) => {
-  return (
-    <Layout>
-      <div className="main-content">
-        <h1>Which bank does this account belong to?</h1>
-        <p>Track all of your payments by connecting as many bank accounts as you'd like to your Nopa<br />
-          account and get updates on your balance instantly.</p>
+class ChooseBankPage extends React.Component {
 
-        <div className="bank-list">
-            {
-              bankList.map(bank => <div ><img alt={bank.name} src={bank.logo} /></div>)
-            }
+  constructor(props) {
+    super(props);
+  }
+
+  render () {
+    return (
+      <Layout>
+        <div className="main-content">
+          <h1>Which bank does this account belong to?</h1>
+          <p>Track all of your payments by connecting as many bank accounts as you'd like to your Nopa<br />
+            account and get updates on your balance instantly.</p>
+          <div className="bank-list">
+              {
+                bankList.map((bank, index) => <div onClick={this.props.selectBank.bind(this,bank)} key={index}><img alt={bank.name} src={bank.logo} /></div>)
+              }
+          </div>
+          <Button to={Paths.LOGIN_BANK} className="button">Get started</Button>
+
         </div>
-
-        <Button to={Paths.LOGIN_BANK} className="button">Get started</Button>
-
-      </div>
-    </Layout>
-  );
+      </Layout>
+    );
+  }
 }
 
-export default ChooseBankPage;
+export default connect(null, {selectBank})(ChooseBankPage);

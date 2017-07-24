@@ -24,6 +24,6 @@ export default {
       logo: require('../../../static/images/LogoSantander.png')
     }
   ],
-  bank: '',
+  selectedBanks: [],
   transactions: []
 };

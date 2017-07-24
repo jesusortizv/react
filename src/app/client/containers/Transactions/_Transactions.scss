@@ -1,0 +1,22 @@
+.Transactions {
+  &__list {
+    background: #fff;
+
+    &__item {
+      &--highlight {
+        background-color: #ededed;
+        color: #868686;
+      }
+    }
+  }
+
+  &__last {
+    width: 50%;
+    margin: 0 auto;
+
+    p {
+      text-align: left;
+      padding: 0;
+    }
+  }
+}

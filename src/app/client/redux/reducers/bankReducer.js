@@ -1,7 +1,7 @@
 import * as types from '../actions/actionTypes';
 import initialState from './initialState.js';
 
-export default function bankReducer(state = initialState.bank, action) {
+export default function bankReducer(state = initialState.selectedBanks, action) {
   switch(action.type) {
     case types.BANK_SELECT:
       return [

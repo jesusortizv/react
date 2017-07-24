@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, LoginForm } from '../../components';
+import { connect } from 'react-redux';
 
 const LoginPage = (props) => {
   return (
@@ -18,4 +19,10 @@ const LoginPage = (props) => {
   );
 }
 
-export default LoginPage;
+const mapStateToProps = state => {
+  return {
+    selectedBanks : state.bankReducer,
+  };
+};
+
+export default connect(mapStateToProps, null)(LoginPage);
