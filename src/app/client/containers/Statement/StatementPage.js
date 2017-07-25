@@ -3,7 +3,7 @@ import { Layout } from '../../components';
 
 const StatementPage = (props) => {
   return (
-    <Layout></Layout>
+    <Layout title="Bank Statement"></Layout>
   );
 }
 

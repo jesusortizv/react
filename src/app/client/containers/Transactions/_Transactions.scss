@@ -14,9 +14,19 @@
     width: 50%;
     margin: 0 auto;
 
+    @include media("<tablet") {
+      width: 100%;
+    }
+
     p {
       text-align: left;
       padding: 0;
+
+      @include media("<tablet") {
+        text-align: center;
+      }
     }
   }
+
+
 }

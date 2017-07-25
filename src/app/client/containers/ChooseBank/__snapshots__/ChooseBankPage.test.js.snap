@@ -1,13 +1,215 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Renders correctly 1`] = `
-<div>
-  <div />
+<section>
   <div
-    className="main-content"
+    className="header"
   >
-    asdsssss
+    <div
+      className="logo"
+    >
+      <a
+        className=""
+        onClick={[Function]}
+        style={Object {}}
+        title="Home"
+      >
+        <img
+          alt="Logo"
+          className="Nopa"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </a>
+    </div>
+    <div
+      className="signin"
+    >
+      <div
+        className=""
+      >
+        <a
+          className="button"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Log In
+        </a>
+      </div>
+    </div>
   </div>
-  <div />
-</div>
+  <div
+    className="layout"
+  >
+    <div
+      className="main-content"
+    >
+      <h1>
+        Which bank does this account belong to?
+      </h1>
+      <p>
+        Track all of your payments by connecting as many bank accounts as you'd like to your Nopa
+        <br />
+        account and get updates on your balance instantly.
+      </p>
+      <div
+        className="bank-list"
+      >
+        <div
+          onClick={[Function]}
+        >
+          <img
+            alt="Barclays"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <img
+            alt="Natwest"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <img
+            alt="Lloyds"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <img
+            alt="HSBC"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <img
+            alt="TSB"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </div>
+        <div
+          onClick={[Function]}
+        >
+          <img
+            alt="Santander"
+            src={
+              Object {
+                "process": [Function],
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <a
+          className="button"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Get started
+        </a>
+      </div>
+    </div>
+  </div>
+  <section
+    className="partners"
+  >
+    <div>
+      <span>
+        Our partners:
+      </span>
+    </div>
+    <div>
+      <div>
+        <img
+          alt="Airbnb"
+          className="Nopa"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </div>
+      <div>
+        <img
+          alt="Metro"
+          className="Nopa"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </div>
+      <div>
+        <img
+          alt="Pariti"
+          className="Nopa"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </div>
+      <div>
+        <img
+          alt="Unshackled"
+          className="Nopa"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </div>
+    </div>
+  </section>
+  <footer
+    className="footer"
+  >
+    <div>
+      <p>
+        © Nopa Limited 2017 All rights reserved. ‘Nopa’ and the Nopa logo are trade marks of Nopa Limited. Nopa is a member of CIFAS - the UK's leading anti-fraud association, and we are registered with the Office of the Information Commissioner (No. Z879078).
+      </p>
+      <p>
+        Nopa Limited is incorporated in England & Wales (registration number 05197592), with its registered office at 1st Floor, Cottons Centre, Tooley Street, London, SE1 2QG. Nopa Limited is authorised and regulated by the Financial Conduct Authority, and entered on the Financial Services Register under firm registration number 563134.
+      </p>
+    </div>
+  </footer>
+</section>
 `;

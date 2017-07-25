@@ -21,20 +21,6 @@ class TransactionsPage extends React.Component {
           transactions: data.transactions,
         });
       });
-    // function transactionsMapped(transactions) {
-    //   return transactions.map((transaction) => {
-    //     const dateStr = transaction.dateStr;
-    //     const objDateStr = {};
-    //     objDateStr.dateStr = isToday(dateStr) ? moment() : moment(dateStr);
-    //     return Object.assign({}, transaction, objDateStr);
-    //   });
-    // }
-
-    // function sortTransaction(transactions) {
-    //   return transactions.sort((a,b) => {
-    //     return a.dateStr.toDate().getTime() - b.dateStr.toDate().getTime()
-    //   });
-    // }
   }
 
   render () {

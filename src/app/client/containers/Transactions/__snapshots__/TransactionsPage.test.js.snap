@@ -43,7 +43,47 @@ exports[`Renders correctly 1`] = `
   </div>
   <div
     className="layout"
-  />
+  >
+    <div
+      className="Transactions main-content"
+    >
+      <h1>
+        Which bank does this account belong to?
+      </h1>
+      <p>
+        Track all of your payments by connecting as many bank accounts as you'd like to your Nopa
+        <br />
+        account and get updates on your balance instantly. Plus it's free
+      </p>
+      <div
+        className="Transactions__last"
+      >
+        <p>
+          Your transactions for the last 30 days
+        </p>
+        <div
+          className="Transactions__list"
+        >
+          <table
+            className="table"
+          >
+            <tbody />
+          </table>
+        </div>
+        <div
+          className=""
+        >
+          <a
+            className="button"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Show more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <section
     className="partners"
   >

@@ -12,9 +12,15 @@ const TextInput = (props) => {
         name={props.name}
         type={props.type}
         placeholder={props.label}
-        onChange={props.handleChange}
+        onBlur={props.handleChange}
         data-error={props.errors} />
-      <div className="errors">{props.errors}</div>
+      {
+        props.errors ?
+          <div className="form-input__error">
+            <strong>Warning!</strong> There is an error.
+          </div> : ''
+      }
+
     </div>
   );
 };
@@ -24,7 +30,7 @@ TextInput.propTypes = {
   label: React.PropTypes.string.isRequired,
   handleChange: React.PropTypes.func.isRequired,
   password: React.PropTypes.bool,
-  errors: React.PropTypes.string
+  errors: React.PropTypes.bool
 };
 
 export default TextInput;
