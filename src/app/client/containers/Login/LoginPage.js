@@ -16,11 +16,11 @@ class LoginPage extends React.Component {
         memorableWord: '',
       },
       errors: {
-        surname: false,
-        sortCode: false,
-        accountNumber: false,
-        passCode: false,
-        memorableWord: false,
+        surname: null,
+        sortCode: null,
+        accountNumber: null,
+        passCode: null,
+        memorableWord: null,
       },
     };
   }
@@ -100,7 +100,7 @@ class LoginPage extends React.Component {
                 (e) => {
                   e.preventDefault();
                   const canSubmit = Object.keys(this.state.errors).every((key) => {
-                    return !this.state.errors[key];
+                    return this.state.errors[key] === false;
                   });
 
                   if (canSubmit) {

@@ -25,19 +25,36 @@ exports[`Renders correctly 1`] = `
         />
       </a>
     </div>
-    <div
-      className="signin"
-    >
+    <div>
       <div
-        className=""
+        className="header__transactions"
       >
-        <a
-          className="button"
-          onClick={[Function]}
-          style={Object {}}
+        <div
+          className=""
         >
-          Log In
-        </a>
+          <a
+            className="button"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Transactions
+          </a>
+        </div>
+      </div>
+      <div
+        className="header__signin"
+      >
+        <div
+          className=""
+        >
+          <a
+            className="button"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Log In
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -67,7 +84,7 @@ exports[`Renders correctly 1`] = `
             Surname
           </label>
           <input
-            data-error={false}
+            data-error={null}
             id="surname"
             name="surname"
             onBlur={[Function]}
@@ -85,7 +102,7 @@ exports[`Renders correctly 1`] = `
             Sort code
           </label>
           <input
-            data-error={false}
+            data-error={null}
             id="sortCode"
             name="sortCode"
             onBlur={[Function]}
@@ -103,7 +120,7 @@ exports[`Renders correctly 1`] = `
             Account number
           </label>
           <input
-            data-error={false}
+            data-error={null}
             id="accountNumber"
             name="accountNumber"
             onBlur={[Function]}
@@ -121,7 +138,7 @@ exports[`Renders correctly 1`] = `
             Pass code
           </label>
           <input
-            data-error={false}
+            data-error={null}
             id="passCode"
             name="passCode"
             onBlur={[Function]}
@@ -139,7 +156,7 @@ exports[`Renders correctly 1`] = `
             Memorable Word
           </label>
           <input
-            data-error={false}
+            data-error={null}
             id="memorableWord"
             name="memorableWord"
             onBlur={[Function]}

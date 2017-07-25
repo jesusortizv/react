@@ -25,19 +25,36 @@ exports[`Renders correctly 1`] = `
         />
       </a>
     </div>
-    <div
-      className="signin"
-    >
+    <div>
       <div
-        className=""
+        className="header__transactions"
       >
-        <a
-          className="button"
-          onClick={[Function]}
-          style={Object {}}
+        <div
+          className=""
         >
-          Log In
-        </a>
+          <a
+            className="button"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Transactions
+          </a>
+        </div>
+      </div>
+      <div
+        className="header__signin"
+      >
+        <div
+          className=""
+        >
+          <a
+            className="button"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Log In
+          </a>
+        </div>
       </div>
     </div>
   </div>

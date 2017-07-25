@@ -11,8 +11,13 @@ const Header = (props) => {
           <img className="Nopa" alt="Logo" src={require('../../../static/images/Logo_Nopa.svg')} />
         </Link>
       </div>
-      <div className="signin">
-        <Button to={Paths.LOGIN_BANK}>Log In</Button>
+      <div>
+        <div className="header__transactions">
+          <Button to={Paths.TRANSACTIONS}>Transactions</Button>
+        </div>
+        <div className="header__signin">
+          <Button to={Paths.LOGIN_BANK}>Log In</Button>
+        </div>
       </div>
     </div>
   )
